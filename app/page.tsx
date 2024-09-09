@@ -19,7 +19,6 @@ export default function Home() {
   const convertToPython = async () => {
     const prompt = `Convert the following JavaScript code into Python: 
     ${jsCode}`;
-    console.log(process.env.NEXT_PUBLIC_API_KEY);
     if (!process.env.NEXT_PUBLIC_API_KEY) {
       return console.log("Error: API Key is not defined.");
     }
