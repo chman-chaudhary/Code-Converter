@@ -21,7 +21,7 @@ export default function Home() {
   const [inputLanguage, setInputLanguage] = useState("javascript");
   const [outputLanguage, setOutputLanguage] = useState("python");
   const [inputCode, setInputCode] = useState(
-    `// Enter your ${inputLanguage} code here\nfunction greet(name) {\n  console.log(\`Hello, ${name}!\`);\n}\n\ngreet("World");`
+    '// Enter your JavaScript code here\nfunction greet(name) {\n  console.log(`Hello, ${name}!`);\n}\n\ngreet("World");'
   );
   const [outputCode, setOutputCode] = useState("");
   const [isLoading, setIsLoading] = useState(false);
